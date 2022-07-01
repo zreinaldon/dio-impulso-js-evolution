@@ -1,76 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex Turismos</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Flex Turismos - Flexbox</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <h1>FlexTurismos</h1>
-        <ul>
-            <li><a href="#quem-somos">Quem Somos</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#planos">Planos</a></li>
-        </ul>
+        <div class="cabecalho">
+            <h1>FlexTurismos</h1>
+            <ul class="menu-cabecalho">
+                <li><a href="#quem-somos">Quem Somos</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#planos">Planos</a></li>
+            </ul>
+        </div>
     </header>
 
-    <div>
-        <div>
+    <section class="apresentacao">
+        <div class="apresentacao-texto">
             <h1>Flex <br>Turismos</h1>
             <p>O melhor serviço para você!</p>
             <a href="">Saiba Mais!</a>
         </div>
 
         <div>
-            <div><img src="./images/0-main.png" alt="banner de apresentação"></div>
+            <div><img src="./images/0-main.png" alt="banner de apresentação"  class="imagem"></div>
         </div>
-    </div>
+    </section>
 
-    <div>
+    <section class="quem-somos">
         <div>
-            <img src="./images/1-quem-somos.png" alt="balcão de atendimento">
-        </div>
-
-        <div>
-            <h2>Quem somos</h2>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
-            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-        </div>
-    </div>
-
-    <div>
-        <div>
-            <h2>Serviços</h2>
+            <img src="./images/1-quem-somos.png" alt="balcão de atendimento"  class="imagem">
         </div>
 
-        <div>
-            <div>
-                <div><img src="./images/icon-2.png" alt="hospedagens"></div>
-                <p>Hospedagens</p>
-                <a href="#">Comprar Agora</a>
+        <div class="quem-somos-texto">
+            <h2>Quem somos ?</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. </p>
+            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+                to using 'Content here, content here', making it look like readable English.</p>
+        </div>
+    </section>
+
+    <section class="servicos-bg">
+        <div class="servicos">
+            <div class="servicos-titulo">
+                <h2>Serviços</h2>
             </div>
-
-            <div>
-               <div><img src="./images/icon-1.png" alt="pacote de viagens"></div>
-               <p>Pacotes de viagens</p>
-               <a href="#">Comprar Agora</a>
+    
+            <div class="servicos-imagens">
+                <div class="imagem-servicos">
+                    <div><img src="./images/icon-2.png" alt="hospedagens"></div>
+                    <p>Hospedagens</p>
+                    <a href="#">Comprar Agora</a>
+                </div>
+    
+                <div class="imagem-servicos" id="item1">
+                    <div><img src="./images/icon-1.png" alt="pacote de viagens"></div>
+                    <p>Pacotes de viagens</p>
+                    <a href="#">Comprar Agora</a>
+                </div>
+    
+                <div class="imagem-servicos">
+                    <div><img src="./images/icon-3.png" alt="roteiros personalizados"></div>
+                    <p>Roteiros personalizados</p>
+                    <a href="#">Comprar Agora</a>
+                </div>
+    
             </div>
-
-            <div>
-                <div><img src="./images/icon-3.png" alt="roteiros personalizados"></div>
-                <p>Roteiros personalizados</p>
-                <a href="#">Comprar Agora</a>
-            </div>
-
         </div>
-    </div>
+    </section>
 
-    <div>
+    <section class="planos">
 
-        <div>
-            <h3>Plano 2</h3>
+        <div class="tipo-plano">
+            <h3>Plano 1</h3>
             <ul>
                 <li>Suporte 24h</li>
                 <li>Serviços de quarto</li>
@@ -79,7 +87,7 @@
             <a href="#">Saiba Mais!</a>
         </div>
 
-        <div>
+        <div class="tipo-plano">
             <h3>Plano 2</h3>
             <ul>
                 <li>Suporte 24h</li>
@@ -91,7 +99,7 @@
             <a href="#">Saiba Mais!</a>
         </div>
 
-        <div>
+        <div class="tipo-plano">
             <h3>Plano 3</h3>
             <ul>
                 <li>Suporte 24h</li>
@@ -103,11 +111,14 @@
             </ul>
             <a href="#">Saiba Mais!</a>
         </div>
-    </div>
+    </section>
 
     <footer>
-        <p>&copy; 2021 CSS Flexbox</p>
-        <p>Desenvolvido por: Seu nome aqui dev</p>
+        <div class="rodape">
+            <p>&copy; 2021 CSS Flexbox</p>
+            <p>Desenvolvido por: José Reinaldo da Silva Neto</p>
+        </div>
     </footer>
 </body>
+
 </html>

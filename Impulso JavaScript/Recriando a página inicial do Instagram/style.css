@@ -1,9 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background-color: #262427;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(var(--b3f,250,250,250),1);
+
+    /*background-color: #262427;*/
+}
+
+/* ================================================================== */
+
+.container-instagram {
+    display: flex;
+    align-items: center;
+
+    height: 100vh;
+    width: 60%;
+}
+
+/* ================================================================== */
+
+.instagram-celular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 50%;
+    
+    /*border: 1px solid black;*/
+}
+
+.instagram-celular img {
+    height: 650px;
+}
+
+/* ================================================================== */
+
+.instagram-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    width: 100%;
+}
+
+/* ================================================================== */
+
+.instagram-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: white;
+
+    border: 1px solid rgb(195, 195, 195);
+
+    padding: 35px 0px;
+
+    width: 85%;
+
+    /*background-color: #e9d9f1;*/
+}
+
+.instagram-login img {
+    margin-bottom: 20px;
+}
+
+.instagram-login img {
+    width: 175px;
+}
+
+.info-login {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    
+
+    width: 80%;
+}
+
+.info-login input {
+    padding: 10px;
+    margin: 3px 0px;
+
+    background-color: rgb(244, 244, 244);
+    color: rgb(93, 93, 93);
+
+    font-size: 12px;
+
+    border-radius: 2px;
+    border: 1px solid rgb(232, 232, 232);
+}
+
+.info-login button {
+    padding: 8px;
+    margin: 10px 0px;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 3px;
+
+    background-color: rgb(99, 129, 251);
+    opacity: 70%;
+    color: white;
+    font-weight: 600;
+}
+
+.info-login p {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    font-size: 14px;
+
+    margin: 5px 0px;
+
+    color: rgb(179, 179, 179);
+}
+.info-login p::after {
+    content: "";
+    width: 40%;
+    height: 1px;
+    background-color: rgb(179, 179, 179);
+
+    margin-top: 4px;
+}
+
+.info-login p::before {
+    content: "";
+    width: 40%;
+    height: 1px;
+    background-color: rgb(179, 179, 179);
+
+    margin-top: 4px;
+}
+
+.info-login a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #2b416e;
+}
+
+.info-login .link-facebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+    margin: 30px 0px;
+
+    color: #4267B2;
+}
+
+.info-login .link-facebook::before {
+    content: "";
+    background-image: url(./img/facebook.png);
+    background-size: cover;
+    margin-right: 2px;
+    height: 15px;
+    width: 15px;
+}
+
+
+/* ================================================================== */
+
+.instagram-cadastro {
+    display: flex;
+    justify-content: center;
+
+    font-size: 14px;
+    background-color: white;
+
+    padding: 20px 0px;
+    width: 85%;
+    
+    margin: 10px 0px;
+
+    border: 1px solid rgb(195, 195, 195);
+}
+
+.instagram-cadastro a {
+    text-decoration: none;
+    color: rgb(54, 93, 248);
+    margin-left: 5px;
+}
+/* ================================================================== */
+
+.instagram-so {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 14px;
+
+    width: 85%;
+}
+
+.fotos-so {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 80%;
+
+    margin-top: 10px;
+}
+
+/* ================================================================== */
+
+.instagram-so img {
+    width: 130px;
 }
